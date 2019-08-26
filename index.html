@@ -19,45 +19,75 @@
        <!-- custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <script>
+             $(".drop").mouseover(function() {
+            $(".dropdown").show(300);
+          });
+          $(".drop").mouseleave(function() {
+            $(".dropdown").hide(300);     
+          });
+          </script>
     <title>Sales Platfrom</title>
 
 
 </head>
 
 <body>
-    <div class="container-fluid">
+    
+    <div class="container-fluid ">
     <!------------------------- navbar --------------------------------->
-    <div class="container mapnav"></div>
-    <h3>All Project</h3>
+    <div class="mapnav "></div>
+    <h3 style="position: absolute;top: 281px;margin-top: 75px;margin-left: 28px;">All Project</h3>
     <div id="sort"><h5>Sort by:</h5></div>
-        <nav>
-            <a href="#">Budget   <i class="fa fa-caret-down"></i></a>
-            <a href="#">Sort date   <i class="fa fa-caret-down"></i></a>
-            <a href="#">End date   <i class="fa fa-caret-down"></i></a>
-            <div class="animation start-home"></div>
+    <nav class="nav">
+            <ul>
+                <li class="drop"><a href="#">Budget</a>
+                    <ul class="dropdown">
+                        <li><a href="#">$50,000</a></li>
+                        <li><a href="#">$80,000</a></li>
+                        <li><a href="#">&5,000</a></li>
+                    </ul>
+                </li>
+                <li class="drop"><a href="#">Start date</a>
+                    <ul class="dropdown">
+                        <li><a href="#">2017</a></li>
+                        <li><a href="#">2018</a></li>
+                        <li><a href="#">2019</a></li>
+                    </ul>
+                </li>
+                <li class="drop"><a href="#">End date</a>
+                    <ul class="dropdown">
+                        <li><a href="#">2018</a></li>
+                        <li><a href="#">2019</a></li>
+                        <li><a href="#">2020</a></li>
+                    </ul>
+                </li>
+
+            </ul>
         </nav>
         <br>
+
+
+
               
     <!------------------------- card --------------------------------->
 
 <div class="row">
-    <div class="col-xl center">
+    <div class=" col-12 col-xl-6 col-lg-6 col-6	col-sm-6 col-md center">
         <div class="card">
             <div class="additional">
                 <div class="user-card">
                     <div class="level center">
                         Initiated
                     </div>
-                    <img src="./images/manwater.jpg" width="200px" alt="">
+                    <img src="./images/manwater.jpg" width="225px" alt="">
                     <!---------------------------- progress bar ------------------------->
-                    <div class="container">
-                        <div class="progress" id="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                aria-valuemax="100" style=" width: 20%; height: 20px;">
-                                20%
+                    <div class="progressbar">
+                            <div class="bars shadow leaf" aria-valuenow="70" aria-valuemin="0"
+                            aria-valuemax="100" >
+                            <p class="shadows">70% complete</p>
                             </div>
                         </div>
-                    </div>
                 </div>
                 <div class="more-info">
                     <h3 class="borehole">Construction of Borehole</h3>
@@ -76,8 +106,8 @@
                         <br>
                         <p id="contractor-txt">contractor</p>
                     </div>
-                    <div id="circle-pic"></div>
-                    <div id="circle-logo"></div>
+                    <div id="circle-pic" style="background-image: url('./images/personsmile.jpg');"alt=""></div>
+                    <div id="circle-logo" style="background-image: url('./images/svg/smilelogo.svg');"></div>
                     <!-- <div id="circle-logo2"></div> -->
                     <p class="view-details">View more details <i class="fa fa-angle-right"></i> </p>
                 </div>
@@ -85,36 +115,34 @@
         </div>
     </div>
     <!---------------------- Renovation card -------------------------------------->
-    <div class="col-xl center">
+    <div class=" col-12 col-xl-6 col-lg-6 col-6	col-sm-6 col-md center">
             <div class="card">
                 <div class="additional">
                     <div class="user-card">
-                        <div class="level center">
-                            Initiated
+                        <div class="level center" style="width:163px; background-color: #F2994A;" >
+                            On track to be defaulted
                         </div>
-                        <img src="./images/manwater.jpg" width="200px" alt="">
+                        <img src="./images/chairs.png" width="225px"  alt="">
                         <!---------------------------- progress bar ------------------------->
-                        <div class="container">
-                            <div class="progress" id="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                    aria-valuemax="100" style=" width: 70%; height: 20px;">
-                                    70%
+                        <div class="progressbar">
+                                <div class="bars shadow leaf" aria-valuenow="70" aria-valuemin="0"
+                                aria-valuemax="100" >
+                                <p class="shadows">70% complete</p>
                                 </div>
                             </div>
-                        </div>
                     </div>
                     <div class="more-info">
-                        <h3 class="borehole">Construction of Borehole</h3>
+                        <h3 class="borehole">Renovation of Classrooms</h3>
                         <br>
                         <p class="location-txt"> <i class="fa fa-map-marker blue" aria-hidden="true"
-                                style="color: blue; font-size: 20px;"></i>Ikorodu, Lagos</p>
+                                style="color: blue; font-size: 20px;"></i>Benin City, Edo</p>
                         <p class="budget-txt"><i class="fa fa-money" aria-hidden="true"
                                 style="color:blue; font-size: 20px;"></i> Budget $50,000 </p><br>
                         <br>
-                        <p class="content-text">The people of ikorodu have long sought for a solution
-                            to the perennial water crisis pagulng the community. <br>
-                            Help came when community members took action
-                            and decided to solve the platrom <span style="color: blue"> ...read more</span>
+                        <p class="content-text">Education remains the only sure way to guarantee
+                            the future of next generation.<br>this project is
+                            expected to change the poor education facilities
+                            that have made it difficult for students <span style="color: blue"> ...Read more</span>
                         </p>
                         <div class="line">
                             <br>
@@ -137,75 +165,70 @@
             <div class="additional">
                 <div class="user-card">
                     <div class="level center">
-                        Initiated
+                        Completed
                     </div>
-                    <img src="./images/manwater.jpg" width="200px" alt="">
+                    <img src="./images/rebuild.png" width="225px" alt="">
                     <!---------------------------- progress bar ------------------------->
-                    <div class="container">
-                        <div class="progress" id="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                aria-valuemax="100" style=" width: 20%; height: 20px;">
-                                20%
+                    <div class="progressbar">
+                            <div class="bars shadow leaf" aria-valuenow="70" aria-valuemin="0"
+                            aria-valuemax="100" >
+                            <p class="shadows">70% complete</p>
                             </div>
                         </div>
-                    </div>
                 </div>
                 <div class="more-info">
-                    <h3 class="borehole">Construction of Borehole</h3>
+                    <h3 class="borehole">Rebuilding the Tema Bridge</h3>
                     <br>
                     <p class="location-txt"> <i class="fa fa-map-marker blue" aria-hidden="true"
-                            style="color: blue; font-size: 20px;"></i>Ikorodu, Lagos</p>
+                            style="color: blue; font-size: 20px;"></i> Gold Coast, Ghana</p>
                     <p class="budget-txt"><i class="fa fa-money" aria-hidden="true"
-                            style="color:blue; font-size: 20px;"></i> Budget $50,000 </p><br>
+                            style="color:blue; font-size: 20px;"></i> Budget $70,000.00</p><br>
                     <br>
-                    <p class="content-text">The people of ikorodu have long sought for a solution
-                        to the perennial water crisis pagulng the community. <br>
-                        Help came when community members took action
-                        and decided to solve the platrom <span style="color: blue"> ...read more</span>
+                    <p class="content-text">This project the rebuilding od the Tema bridge
+                        which was destroyed by erosion in 2014. <br>Contractors submitted bids and went through a competitive series
+                        of steps before they were selected <span style="color: blue">...Read more</span>
                     </p>
                     <div class="line">
                         <br>
                         <p id="contractor-txt">contractor</p>
                     </div>
-                    <div id="circle-pic"></div>
-                    <div id="circle-logo"></div>
+                    <div id="circle-pic" style="background-image: url('../images/personsmile.jpg');"></div>
+                    <div id="circle-logo" style="background-image: url('../images/personsmile.jpg');"></div>
                     <!-- <div id="circle-logo2"></div> -->
                     <p class="view-details">View more details <i class="fa fa-angle-right"></i> </p>
                 </div>
             </div>
         </div>
     </div>
-    <!---------------------- Renovation card -------------------------------------->
+    <!---------------------- Repairs card -------------------------------------->
     <div class="col-xl center">
             <div class="card">
                 <div class="additional">
                     <div class="user-card">
                         <div class="level center">
-                            Initiated
+                            Defaulted
                         </div>
-                        <img src="./images/manwater.jpg" width="200px" alt="">
+                        <img src="./images/repair.png" width="225px" alt="">
                         <!---------------------------- progress bar ------------------------->
-                        <div class="container">
-                            <div class="progress" id="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                    aria-valuemax="100" style=" width: 70%; height: 20px;">
-                                    70%
+                        <div class="progressbar">
+                                <div class="bars shadow leaf" aria-valuenow="70" aria-valuemin="0"
+                                aria-valuemax="100" >
+                                <p class="shadows">70% complete</p>
                                 </div>
                             </div>
-                        </div>
                     </div>
                     <div class="more-info">
-                        <h3 class="borehole">Construction of Borehole</h3>
+                        <h3 class="borehole">Repair of Eroded Road</h3>
                         <br>
                         <p class="location-txt"> <i class="fa fa-map-marker blue" aria-hidden="true"
-                                style="color: blue; font-size: 20px;"></i>Ikorodu, Lagos</p>
+                                style="color: blue; font-size: 20px;"></i> Yenegoa, Bayelsa</p>
                         <p class="budget-txt"><i class="fa fa-money" aria-hidden="true"
-                                style="color:blue; font-size: 20px;"></i> Budget $50,000 </p><br>
+                                style="color:blue; font-size: 20px;"></i> Budget:$5,000.00 </p><br>
                         <br>
-                        <p class="content-text">The people of ikorodu have long sought for a solution
-                            to the perennial water crisis pagulng the community. <br>
-                            Help came when community members took action
-                            and decided to solve the platrom <span style="color: blue"> ...read more</span>
+                        <p class="content-text">This project will involve the repair of the yenagoad road 
+                            destroyed due to the impact of erosion. <br>It will be done
+                            within the dry season of the year to ensure the work is not
+                            interrupted by the rains<span style="color: blue">...Read more</span>
                         </p>
                         <div class="line">
                             <br>
@@ -228,31 +251,28 @@
             <div class="additional">
                 <div class="user-card">
                     <div class="level center">
-                        Initiated
+                       Not initiated
                     </div>
-                    <img src="./images/manwater.jpg" width="200px" alt="">
+                    <img src="./images/health.png" width="225px" alt="">
                     <!---------------------------- progress bar ------------------------->
-                    <div class="container">
-                        <div class="progress" id="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                aria-valuemax="100" style=" width: 20%; height: 20px;">
-                                20%
+                    <div class="progressbar">
+                            <div class="bars shadow leaf" aria-valuenow="70" aria-valuemin="0"
+                            aria-valuemax="100" >
+                            <p class="shadows">70% complete</p>
                             </div>
                         </div>
-                    </div>
                 </div>
                 <div class="more-info">
-                    <h3 class="borehole">Construction of Borehole</h3>
+                    <h3 class="borehole">Construction of Health Center </h3>
                     <br>
                     <p class="location-txt"> <i class="fa fa-map-marker blue" aria-hidden="true"
-                            style="color: blue; font-size: 20px;"></i>Ikorodu, Lagos</p>
+                            style="color: blue; font-size: 20px;"></i> Jos, Plateau</p>
                     <p class="budget-txt"><i class="fa fa-money" aria-hidden="true"
                             style="color:blue; font-size: 20px;"></i> Budget $50,000 </p><br>
                     <br>
-                    <p class="content-text">The people of ikorodu have long sought for a solution
-                        to the perennial water crisis pagulng the community. <br>
-                        Help came when community members took action
-                        and decided to solve the platrom <span style="color: blue"> ...read more</span>
+                    <p class="content-text">This proposed health care facility will providethe much 
+                        needed health care for the people of this community, <br>and is expected to go a long way in  solving the infant
+                        mortality problem <span style="color: blue">...Read more</span>
                     </p>
                     <div class="line">
                         <br>
@@ -266,37 +286,34 @@
             </div>
         </div>
     </div>
-    <!---------------------- Renovation card -------------------------------------->
+    <!---------------------- Construction card -------------------------------------->
     <div class="col-xl center">
             <div class="card">
                 <div class="additional">
                     <div class="user-card">
                         <div class="level center">
-                            Initiated
+                            Completed
                         </div>
-                        <img src="./images/manwater.jpg" width="200px" alt="">
+                        <img src="./images/udala.png" width="225px" alt="">
                         <!---------------------------- progress bar ------------------------->
-                        <div class="container">
-                            <div class="progress" id="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                    aria-valuemax="100" style=" width: 70%; height: 20px;">
-                                    70%
+                        <div class="progressbar">
+                                <div class="bars shadow leaf" aria-valuenow="70" aria-valuemin="0"
+                                aria-valuemax="100" >
+                                <p class="shadows">70% complete</p>
                                 </div>
                             </div>
-                        </div>
                     </div>
                     <div class="more-info">
-                        <h3 class="borehole">Construction of Borehole</h3>
+                        <h3 class="borehole">Construction of Udala Road </h3>
                         <br>
                         <p class="location-txt"> <i class="fa fa-map-marker blue" aria-hidden="true"
-                                style="color: blue; font-size: 20px;"></i>Ikorodu, Lagos</p>
+                                style="color: blue; font-size: 20px;"></i> Sambisa,Borno</p>
                         <p class="budget-txt"><i class="fa fa-money" aria-hidden="true"
-                                style="color:blue; font-size: 20px;"></i> Budget $50,000 </p><br>
+                                style="color:blue; font-size: 20px;"></i> Budget $80,000.00 </p><br>
                         <br>
-                        <p class="content-text">The people of ikorodu have long sought for a solution
-                            to the perennial water crisis pagulng the community. <br>
-                            Help came when community members took action
-                            and decided to solve the platrom <span style="color: blue"> ...read more</span>
+                        <p class="content-text">The Boko Haram scourge led to destruction of 
+                            this classroom which has now been fully rebuilt and equipped <br>
+                            with state of the art facilities to aid the learning of students<span style="color: blue"> ...Read more</span>
                         </p>
                         <div class="line">
                             <br>
@@ -319,31 +336,29 @@
             <div class="additional">
                 <div class="user-card">
                     <div class="level center">
-                        Initiated
+                        On track to be completed
                     </div>
-                    <img src="./images/manwater.jpg" width="200px" alt="">
+                    <img src="./images/classroom.png" width="225px" alt="">
                     <!---------------------------- progress bar ------------------------->
-                    <div class="container">
-                        <div class="progress" id="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                aria-valuemax="100" style=" width: 20%; height: 20px;">
-                                20%
+                    <div class="progressbar">
+                            <div class="bars shadow leaf" aria-valuenow="70" aria-valuemin="0"
+                            aria-valuemax="100" >
+                            <p class="shadows">70% complete</p>
                             </div>
                         </div>
-                    </div>
                 </div>
                 <div class="more-info">
-                    <h3 class="borehole">Construction of Borehole</h3>
+                    <h3 class="borehole">Construction of Burna Bridge</h3>
                     <br>
                     <p class="location-txt"> <i class="fa fa-map-marker blue" aria-hidden="true"
-                            style="color: blue; font-size: 20px;"></i>Ikorodu, Lagos</p>
+                            style="color: blue; font-size: 20px;"></i> Minna, Niger</p>
                     <p class="budget-txt"><i class="fa fa-money" aria-hidden="true"
-                            style="color:blue; font-size: 20px;"></i> Budget $50,000 </p><br>
+                            style="color:blue; font-size: 20px;"></i> Budget $10,000.00</p><br>
                     <br>
-                    <p class="content-text">The people of ikorodu have long sought for a solution
-                        to the perennial water crisis pagulng the community. <br>
-                        Help came when community members took action
-                        and decided to solve the platrom <span style="color: blue"> ...read more</span>
+                    <p class="content-text">The Burna Bridge project will link eight communities
+                        and aid the inflow of essential goods and <br>services to 
+                        these areas. It is expected to be completed in the
+                        next two months<span style="color: blue">...Read more</span>
                     </p>
                     <div class="line">
                         <br>
@@ -363,18 +378,16 @@
                 <div class="additional">
                     <div class="user-card">
                         <div class="level center">
-                            Initiated
+                            Completed
                         </div>
-                        <img src="./images/manwater.jpg" width="200px" alt="">
+                        <img src="./images/burn.png" width="225px" alt="">
                         <!---------------------------- progress bar ------------------------->
-                        <div class="container">
-                            <div class="progress" id="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                    aria-valuemax="100" style=" width: 70%; height: 20px;">
-                                    70%
+                        <div class="progressbar">
+                                <div class="bars shadow leaf" aria-valuenow="70" aria-valuemin="0"
+                                aria-valuemax="100" >
+                                <p class="shadows">70% complete</p>
                                 </div>
                             </div>
-                        </div>
                     </div>
                     <div class="more-info">
                         <h3 class="borehole">Construction of Borehole</h3>
@@ -402,30 +415,61 @@
             </div>
         </div>
    </div>
-
-
-
-
-
-
-
-
-
-
+                 <!----------------------- Next page bar --------------------->
 <br>
+<div class="bar">
+        <input class="bar-input" type="radio" name="input" id="input_0"/>
+        <div class="bar-view">
+          <label class="bar-button" for="input_0"></label>
+        </div>
+        <input class="bar-input" type="radio" name="input" id="input_1"/>
+        <div class="bar-view">
+          <label class="bar-button" for="input_1"></label>
+        </div>
+        <input class="bar-input" type="radio" name="input" id="input_2"/>
+        <div class="bar-view">
+          <label class="bar-button" for="input_2"></label>
+        </div>
+        <input class="bar-input" type="radio" name="input" id="input_3"/>
+        <div class="bar-view">
+          <label class="bar-button" for="input_3"></label>
+        </div>
+        <input class="bar-input" type="radio" name="input" id="input_4"/>
+        <div class="bar-view">
+          <label class="bar-button" for="input_4"></label>
+        </div>
+      </div>
+      <div class="command">click to view the next page</div>
+<!-- <br>
 <div class="circle-next1"> </div>
 <div class="circle-next2"> </div>
 <div class="circle-next3"> </div>
 <div class="circle-next4"> </div>
 <br>
 <hr>
-</div>
+</div> -->
 <footer>
         <div class="col-6">
                 <p>&copy; Sela. 2018</p>
             </div>
 </footer>
+ 
+<script>
+        const bars = document.querySelectorAll('.bar');
+const progress = document.querySelectorAll('.progress');
 
+bars.forEach((bar, index) => {
+  const randomWidth = Math.floor((Math.random() * 65) + 10);
+  bar.style.width = `${randomWidth}%`;
+
+  progress[index].addEventListener('mouseover', () => {
+    const randomTiming = Math.floor((Math.random() * 2) + 2);
+    console.log(randomTiming);
+    bar.style.transitionDuration = `${randomTiming}s`;
+    bar.style.width = '100%';
+  });
+})
+    </script>
         <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
