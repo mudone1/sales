@@ -61,7 +61,7 @@
     position: absolute;
     width: 35px;
     height: 35px;
-    background-color: red;
+
     border-radius: 50%;
     margin-top: 67px;
     margin-left: 72px;
@@ -73,7 +73,6 @@
     position: absolute;
     width: 35px;
     height: 35px;
-    background-color: blue;
     border-radius: 50%;
     margin-top: 67px;
     margin-left: 116px;
@@ -85,10 +84,9 @@
     position: absolute;
     width: 35px;
     height: 35px;
-    background-color: green;
     border-radius: 50%;
     margin-top: 67px;
-    margin-left: 139px;
+    margin-left: 159px;
 }
 
 .view-details{
@@ -116,7 +114,7 @@ html, body {
 }
 
 .card {
-  width: 578px;
+  width: 587px;
   height: 350px;
   background-color: transparent;
   box-shadow: 10px 13px 13px -12px #625757b0;
@@ -176,7 +174,7 @@ html, body {
     height: 23px;
     border-radius: 1px 0px 13px 1px;
     background-color: #58bf5c;
-    margin-top: -52px;
+    margin-top: -54px;
     margin-left: 0px;
     top: 15%;
     color: #fff;
@@ -305,7 +303,7 @@ html, body {
   margin-top: 8px;
   font-weight: 700;
   font-size: 8px;
-  color: white;
+  color: black;
 }
 
 .bars {
@@ -329,9 +327,10 @@ html, body {
 }
 
 .borehole{
-    margin-left: 57px;
-    color: #333333;
-    padding: 13px;
+  margin-left: 56px;
+  color: #333333;
+  font-size: x-large;
+  padding: 13px;
 }
 .location-txt{
   margin-left: 72px;
@@ -340,7 +339,7 @@ html, body {
   margin-top: -8px;
 }
 .budget-txt{
-    margin-left: 198px;
+    margin-left: 226px;
     margin-top: -7px;
     font-size: 15px;
     position: absolute;
@@ -751,3 +750,85 @@ html, body {
   position: absolute;
   }
 }
+/* @media screen and (max-width: 780px){
+
+  .card {
+    width: 328px;
+    height: 336px;
+    background-color: transparent;
+    box-shadow: 10px 13px 13px -12px #625757b0;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin-left: -39px;
+}
+.progressbar {
+  display: inline-block;
+  width: 119px;
+  height: 24px;
+  margin: 21px;
+  border-radius: 20px;
+  margin-top: -56px;
+  background: #F2F2F2;
+  position: absolute;
+}
+  .img {
+    width: 168px;
+}
+
+.card .additional .more-info {
+  width: 529px;
+  float: left;
+  position: absolute;
+  left: 109px;
+  height: 100%;
+}
+
+.card .additional .more-info {
+    width: 810px;
+    float: left;
+    position: absolute;
+    left: 106px;
+    height: 100%;
+}
+
+
+
+#sort {
+  margin: 28px 205px;
+  border: 1px solid #2D9CDB;
+  width: 113px;
+  height: 47px;
+  position: absolute;
+}
+
+nav {
+  margin: 1px 259px;
+  width: 443px;
+  margin-top: 26px;
+  top: 307px;
+  position: inherit;
+  background: #008fea;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  width: 338px;
+  height: 295px;
+  background-color: transparent;
+  box-shadow: 10px 13px 13px -12px #625757b0;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin-left: -34px;
+}
+
+
+
+
+
+
+
+
+}
+ */
